@@ -8,14 +8,14 @@ Strings passed in will consist of only letters and spaces. Spaces will be includ
 
 def spin_words(sentence):
     lst = list(sentence.split())
-    arr = []
+    new = []
     for elem in range(len(lst)):
         if len(lst[elem]) >= 5:
             rev = lst[elem][::-1]
-            arr.append(rev)
+            new.append(rev)
         else:
-            arr.append(lst[elem])
-    return " ".join(arr)
+            new.append(lst[elem])
+    return " ".join(new)
 
 
 string = 'Hi CodeWars'
