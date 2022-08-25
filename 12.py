@@ -10,7 +10,15 @@ Example:
 
 def pig_it(text):
     lst = text.split()
-    return lst
+    new_lst = []
+    for elem in lst:
+        if elem.isalpha():
+            new = elem[1:] + elem[0] +"ay"
+            new_lst.append(new)
+        else:
+            new_lst.append(elem)
+    return " ".join(new_lst)
 
-string = "Hello world !"
+
+string = "Pig latin is cool"
 print(pig_it(string))
