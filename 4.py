@@ -9,6 +9,7 @@ Strings passed in will consist of only letters and spaces. Spaces will be includ
 def spin_words(sentence):
     lst = sentence.split()
     new = []
+
     for elem in range(len(lst)):
         if len(lst[elem]) >= 5:
             rev = lst[elem][::-1]
